@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Packer Fotografia</title>
+
+    <style type="text/css">
+        body
+     { background-color: rgb(34, 34, 34); }
+
+     #menu a{
+         font-family: sans-serif;
+         font-size: 15px;
+         padding: 5px;
+     }
+
+     #menu ul {
+       padding: 0px;
+       margin: 0px;
+       background-color: rgb(160, 0, 0);
+       list-style: none; /* tirando o bullet das opções */
+     }
+
+     #menu ul li { display: inline; } /* faz o menu ficar na horizontak */
+
+     #menu ul li a { 
+         padding: 7px 10px; /* espaço entre os botões */
+         display: inline-block; /* elemento de bloco sem quebra de linha */
+
+         /* visual do link */
+         background-color: rgb(160, 0, 0);
+         color: rgb(0, 0, 0);
+         text-decoration: none; /* retira o sublinhado de link */
+         border-bottom: 2px solid rgb(182, 0, 0); /* cria uma borda inferior no botão */
+         transition: background-color 1s, color 1s, border-bottom 1s;
+         transition-timing-function: ease-out;
+     }
+     
+     /* o que acontece com o link quando se passa o mouse sobre */
+     #menu ul li a:hover {
+       background-color: rgb(190, 0, 0);
+       color: rgb(0, 0, 0);
+       border-bottom: 2px solid #EA0000;
+     }
+
+     #hr {
+         border-color:rgb(160, 0, 0);
+     }
+
+    #botao1{
+        position:absolute;
+         top:4%; 
+         left:73%;
+         transform: translate(-50%, -50%);
+         }
+
+    #botao2{
+        position:absolute;
+         top:4%; 
+         left:79%;
+         transform: translate(-50%, -50%);
+         }
+
+    #div_pesquisa{
+        position:absolute;
+         top:4%; 
+         left:90%;
+         transform: translate(-50%, -50%);
+         }
+        
+    #div_pesquisa {
+      background-color:#2F4F4F;
+      border: solid 1px;
+      border-radius: 6px;
+      width: 200px;
+    }
+
+    #input_pesquisa {
+      float: left;
+      background-color: transparent;
+      padding-left: 5px;
+      font-style: italic;
+      border: none;
+      height: 20px;
+      width: 142px;
+    }
+
+    #btn_pesquisa {
+        border: none;
+        float: left;
+        height: 22px;
+        border-radius:0 5px 5px 0;
+        width: 53px;
+        font-weight: bold;
+        background: rgb(199, 199, 199);
+    }
+
+    #bcadastrar {
+    width: 80px;
+    height: 25px;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    }
+    
+    #blogin {
+    width: 70px;
+    height: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    }
+
+</style> 
+    </style>
+</head>
+<body>
+        <nav id="menu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">FOTOS</a></li>
+                    <li><a href="#">CONTATOS</a></li>
+                    <li><a href="#">SIMULADOR</a></li>
+                </ul>
+            </nav>
+    <hr id="hr">
+
+    <div id="botao1">
+        <button id="bcadastrar">Cadastrar</button>
+    </div>
+
+    <div id="botao2">
+        <button id="blogin">Login</button>
+    </div>
+
+    <div id="div_pesquisa">
+        <input type="text" id="input_pesquisa" placeholder="Pesquisar..."/>
+        <button id="btn_pesquisa">Buscar</button>
+    </div>
+
+
+    <h2 align="center"><font FACE="Arial" SIZE="6" COLOR="white">LLL Fotografia</font></h2>
+</body>
+</html>
